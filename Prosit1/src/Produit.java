@@ -18,4 +18,14 @@ public class Produit {
     public void afficher () {
         System.out.println("identifiant:  " + identifiant +"  libellé:  " + libellé +"  marque:  " + marque+ "prix:  " + prix + "date expiration:   " + dateexpiration);
     }
+    @Override
+    public String toString() {
+        return "Produit{" +
+                "identifiant=" + identifiant +
+                ", libellé='" + libellé + '\'' +
+                ", marque='" + marque + '\'' +
+                ", prix=" + prix +
+                ", dateexpiration=" + dateexpiration +
+                '}';
+    }
 }
